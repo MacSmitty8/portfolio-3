@@ -38,8 +38,41 @@ nav .left-side a {
   font-size: 22px;
   font-weight: 700;
 }
-nav .right-side {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+nav .right-side a{
+  color:var(--text-color);
+  margin:0 5px;
+}
+
+nav .right-side a:last-child{
+  color:var(--background-color);
+  background-color:var(--text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav .right-side a span{
+    margin-left: 5px;
+}
+/* Navbar Styling on mobile devices */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: row;
+    padding: 0 20px;
+  }
+
+  nav .left-side {
+    margin-bottom: 10px;
+  }
+
+  nav .right-side a {
+    font-size: 22px;
+  }
+  nav .right-side a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0px;
+  }
+   nav .right-side a span {
+    display: none;
+  }
 }
