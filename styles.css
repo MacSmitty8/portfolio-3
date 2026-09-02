@@ -132,9 +132,24 @@ nav .right-side a span {
   justify-content: center;
   align-items: center;
   width: 200px;
-  padding: 10px20px;
+  padding: 10px 20px;
+  margin: 10px;
+  gap: 10px;
   border: 1.5px solid gray;
 }
+
+.skills-section .cells .cell img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span{
+  font-size: 18px;
+}
+
+/* For mobile devices */
 
 @media (max-width: 850px) {
   /* For Section 1 Hero */
@@ -181,5 +196,14 @@ nav .right-side a span {
   }
   .hero-section .hero-text h2 {
     font-size: 30px;
+  }
+
+  /* Section 2 Skills */
+  skills-section {
+    padding: 0 20px;
+  }
+
+  skills-section .cells .cell {
+    font-size: 16px;
   }
 }
