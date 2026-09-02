@@ -217,6 +217,11 @@ nav .right-side a span {
   .hero-section .headshot img {
     width: 300px;
   }
+
+  /* Section 3 Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
 }
 
 /* Navbar Styling on mobile devices */
@@ -256,5 +261,9 @@ nav .right-side a span {
 
   skills-section .cells .cell {
     font-size: 16px;
+  }
+  /* Section 3 Contact */
+  .contact-section .group {
+    padding: 0 20px;
   }
 }
